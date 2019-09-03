@@ -2,6 +2,7 @@
 const express = require('express');
 const server = express();
 server.use(express.json());
+server.use(cors());
 const DB = require('./data/db');
 
 const port = 3333;
